@@ -38,7 +38,7 @@ public class Fabricante {
 		this.vehiculosFabricados = vehiculosFabricados;
 	}
 	
-	public Fabricante fabricaMayorVentas() {
+	public static Fabricante fabricaMayorVentas() {
 		Fabricante mayoresVentas = fabricas.get(0);
 		
 		for (int i = 1; i<fabricas.size(); i++) {
