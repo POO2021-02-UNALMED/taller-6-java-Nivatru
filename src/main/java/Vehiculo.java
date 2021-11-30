@@ -12,8 +12,16 @@ public class Vehiculo {
 	protected String traccion;
 	protected Fabricante fabricante;
 	
-	public Vehiculo() {
-		setNumeroVehiculos(getCantidadVehiculos() + 1);
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+		this.nombre = nombre;
+		this.puertas = puertas;
+		this.velocidadMaxima = velocidadMaxima;
+		this.placa = placa;
+		this.precio = precio;
+		this.peso = peso;
+		this.traccion = traccion;
+		this.fabricante = fabricante;
+		setCantidadVehiculos(getCantidadVehiculos() + 1);
 	}
 	
 	public String getPlaca() {
@@ -69,7 +77,7 @@ public class Vehiculo {
 		return numeroVehiculos;
 	}
 
-	public static void setNumeroVehiculos(int numeroVehiculos) {
+	public static void setCantidadVehiculos(int numeroVehiculos) {
 		Vehiculo.numeroVehiculos = numeroVehiculos;
 	}
 	
